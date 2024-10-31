@@ -1,0 +1,97 @@
+$color_1: #2271b1;
+$color_2: #0a4b78;
+$border-color_1: #2271b1;
+$border-color_2: #0a4b78;
+
+/* Admin general setting daily price section css start */
+/* Admin general setting daily price section css end */
+/* Admin general setting Extra service section css start */
+/* order amount reviced button css  */
+/* Admin general setting Extra service section css end */
+.product_data {
+	.show_if_icrmw_rental {
+		.icrmw_product_rent_type_fields_box {
+			display: none;
+		}
+		.icrmw_product_rent_type_fields_box.active {
+			display: block;
+		}
+	}
+}
+.woocommerce_options_panel {
+	.show_if_icrmw_rental {
+		input[type="time"] {
+			float: left;
+		}
+	}
+}
+#woocommerce-order-items {
+	.woocommerce_order_items_wrapper {
+		table.woocommerce_order_items {
+			table.display_meta {
+				tr {
+					td {
+						p {
+							line-height: inherit;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.woocommerce {
+	table {
+		&.form-table {
+			.forminp-textarea {
+				textarea {
+					height: 300px;
+					width: 100%;
+				}
+				.icrmw_reset_email_template {
+					float: right;
+				}
+				p {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	.icrmw_pro_label {
+		display: inline;
+		padding: 0.2em 0.3em 0.3em;
+		font-size: 75%;
+		font-weight: 600;
+		line-height: 1;
+		color: #fff;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 0.25em;
+		background-color: #d63638;
+		margin-left: 10px;
+	}
+	.forminp-text {
+		.description {
+			display: inline-block;
+		}
+	}
+	
+}
+input[type=checkbox]:disabled,input[type=text]:disabled {
+	cursor: not-allowed;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+	#woocommerce-product-data {
+		#general_product_data {
+			.wc-radios {
+				li {
+					input {
+						width: 25px;
+					}
+				}
+				width: 100%;
+			}
+		}
+	}
+}
